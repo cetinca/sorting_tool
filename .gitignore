@@ -1,0 +1,173 @@
+__pycache__
+*.egg
+*.py[cod]
+*.so
+*.cfg
+!.isort.cfg
+*.orig
+*.log
+*.pot
+.pytest_cache/*
+__pycache__/*
+.DS_*
+.cache/*
+.*.swp
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+.coverage*
+cache_dir/
+
+**/*secret*
+**/*private*
+**/*credential*
+**/*.env*
+!.env_example
+!.env_ci_cd
+
+**/.venv
+**/venv
+
+*.sqlite3
+*.pem
+media/
+!media/profile_pics/default.jpg
+.idea
+.fleet/
+nohup*
+
+# Terraform ignore
+# source https://github.com/github/gitignore/blob/main/Terraform.gitignore
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude all .tfvars files, which are likely to contain sensitive data, such as
+# password, private keys, and other secrets. These should not be part of version
+# control as they are data points which are potentially sensitive and subject
+# to change depending on the environment.
+#
+*.tfvars
+
+# Ignore override files as they are usually used to override resources locally and so
+# are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+generated-dialog.yml
+
+# Include override files you do wish to add to version control using negated pattern
+#
+# !example_override.tf
+
+# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
+# example: *tfplan*
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# lockfiles
+*.lock
+poetry.lock
+
+# Celery database
+celerybeat-schedule
+celerybeat-schedule.bak
+celerybeat-schedule.dat
+celerybeat-schedule.dir
+
+# databases
+db.sqlite*
+# Temporary and binary files
+*.bak
+*~
+
+
+
+
+# pypi package setup files
+# pyproject must not be in root dir for `pip install -e .` to work
+# pyproject.toml
+!scripts/pyproject.toml
+!setup.cfg
+
+# Internal working cache for poetry
+poetry.lock
+
+
+# IDE project files
+.vscode
+*.code-workspace
+.idea
+.idlerc
+.ropeproject
+.project
+.pydevproject
+.settings
+*.sublime-*
+.vstemplate
+# tags
+
+
+# Package files
+*.egg
+*.eggs/
+.installed.cfg
+*.egg-info
+
+# Unittest and coverage
+htmlcov/*
+.coverage
+.tox
+junit.xml
+coverage.xml
+.pytest_cache/
+pytest-results*
+
+# Build and docs folder/files
+build/
+dist/
+sdist/
+cover/
+runs/
+MANIFEST*
+
+# Mac
+__MACOSX
+
+# KDE
+.directory
+
+# BigData and Models
+db.sqlite3
+*.bz2
+*.zip
+*.pkl
+*.npy
+
+# built docs
+docs/**/*.html
+docs/api/
+docs/_rst/
+docs/_build/
+
+# secrets
+/*.json
+
+# pyvis javascript libraries?
+lib/
+
+
+# Don't upload local collected static files
+staticfiles/
+
+scripts/build-local.sh
